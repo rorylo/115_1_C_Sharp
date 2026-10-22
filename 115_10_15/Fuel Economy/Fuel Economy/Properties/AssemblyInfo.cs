@@ -2,9 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
+// 以下屬性提供組件的一般資訊，可依需求修改組件相關資料。
 [assembly: AssemblyTitle("Fuel Economy")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
@@ -19,10 +17,10 @@ using System.Runtime.InteropServices;
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
+// 如果此專案公開給 COM，以下 GUID 會作為型別程式庫的識別碼。
 [assembly: Guid("81e3dd9e-59e8-42e4-b098-c229fdffb68c")]
 
-// Version information for an assembly consists of the following four values:
+// 組件版本資訊由以下四個部分組成：
 //
 //      Major Version
 //      Minor Version 

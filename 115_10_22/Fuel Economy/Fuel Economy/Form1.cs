@@ -1,0 +1,54 @@
+﻿// 提供事件參數與其他基本型別。
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Fuel_Economy
+{
+    // 表單主類別，負責處理油耗計算器的畫面與使用者操作。
+    public partial class Form1 : Form
+    {
+        // 建立表單，並初始化設計工具產生的控制項。
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        // 使用者按下計算按鈕時，執行油耗計算流程。
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            // 宣告行駛公里數、使用公升數，以及計算結果。
+            double km;
+            double litera;
+            double kmpl;
+
+            // 將公里數文字欄位的內容轉換成 double 數值。
+            km = double.Parse(milesTextBox.Text);
+            // 將公升數文字欄位的內容轉換成 double 數值。
+            litera = double.Parse(gallonsTextBox.Text);
+            // 以行駛公里數除以使用公升數，計算每公升可行駛的公里數。
+            kmpl = km / litera;
+            // 將結果格式化為小數點後兩位，並顯示在結果標籤上。
+            mpgLabel.Text = kmpl.ToString("f2") + "公里/公升";
+
+        }
+
+        // 使用者按下離開按鈕時，關閉目前的表單。
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // 關閉油耗計算器視窗。
+            this.Close();
+        }
+
+        // 使用者按下公里數提示文字時觸發，目前不需要額外處理。
+        private void milesPromptLabel_Click(object sender, EventArgs e)
+        {
+        }
+    }
+}

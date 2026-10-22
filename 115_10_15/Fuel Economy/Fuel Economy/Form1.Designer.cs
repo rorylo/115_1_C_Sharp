@@ -44,9 +44,10 @@
             this.milesPromptLabel.Location = new System.Drawing.Point(18, 25);
             this.milesPromptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.milesPromptLabel.Name = "milesPromptLabel";
-            this.milesPromptLabel.Size = new System.Drawing.Size(152, 18);
+            this.milesPromptLabel.Size = new System.Drawing.Size(134, 18);
             this.milesPromptLabel.TabIndex = 0;
-            this.milesPromptLabel.Text = "輸入行駛英里數：";
+            this.milesPromptLabel.Text = "輸入行駛公里數";
+            this.milesPromptLabel.Click += new System.EventHandler(this.milesPromptLabel_Click);
             // 
             // gallonsPromptLabel
             // 
@@ -54,14 +55,14 @@
             this.gallonsPromptLabel.Location = new System.Drawing.Point(18, 72);
             this.gallonsPromptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gallonsPromptLabel.Name = "gallonsPromptLabel";
-            this.gallonsPromptLabel.Size = new System.Drawing.Size(206, 18);
+            this.gallonsPromptLabel.Size = new System.Drawing.Size(188, 18);
             this.gallonsPromptLabel.TabIndex = 1;
-            this.gallonsPromptLabel.Text = "輸入使用的汽油加侖數：";
+            this.gallonsPromptLabel.Text = "輸入消耗的汽油公升數";
             // 
             // milesTextBox
             // 
             this.milesTextBox.Location = new System.Drawing.Point(300, 21);
-            this.milesTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.milesTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.milesTextBox.Name = "milesTextBox";
             this.milesTextBox.Size = new System.Drawing.Size(223, 29);
             this.milesTextBox.TabIndex = 2;
@@ -69,7 +70,7 @@
             // gallonsTextBox
             // 
             this.gallonsTextBox.Location = new System.Drawing.Point(300, 68);
-            this.gallonsTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gallonsTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.gallonsTextBox.Name = "gallonsTextBox";
             this.gallonsTextBox.Size = new System.Drawing.Size(223, 29);
             this.gallonsTextBox.TabIndex = 3;
@@ -82,7 +83,7 @@
             this.outputDescriptionLabel.Name = "outputDescriptionLabel";
             this.outputDescriptionLabel.Size = new System.Drawing.Size(223, 18);
             this.outputDescriptionLabel.TabIndex = 4;
-            this.outputDescriptionLabel.Text = "車輛的英里每加侖 (MPG)：";
+            this.outputDescriptionLabel.Text = "車輛的公里每公升 (MPG)：";
             // 
             // mpgLabel
             // 
@@ -97,7 +98,7 @@
             // calculateButton
             // 
             this.calculateButton.Location = new System.Drawing.Point(165, 208);
-            this.calculateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.calculateButton.Margin = new System.Windows.Forms.Padding(4);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(135, 48);
             this.calculateButton.TabIndex = 6;
@@ -108,7 +109,7 @@
             // exitButton
             // 
             this.exitButton.Location = new System.Drawing.Point(330, 208);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(4);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(135, 48);
             this.exitButton.TabIndex = 7;
@@ -129,7 +130,7 @@
             this.Controls.Add(this.milesTextBox);
             this.Controls.Add(this.gallonsPromptLabel);
             this.Controls.Add(this.milesPromptLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "油耗計算器";
             this.ResumeLayout(false);
