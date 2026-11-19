@@ -47,7 +47,7 @@ namespace EquipmentRental
                         if (days >= 3)
                         {
                             discount = 30;
-                            discountMessage = "折抵 30 元";
+                            discountMessage = "折抵30元";
                         }
                         else
                         {
